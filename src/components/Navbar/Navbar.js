@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './Navbar.css'
+import 'animate.css';
 
 import NavbarButton from "./NavbarButton/NavbarButton";
 
@@ -41,7 +42,7 @@ function Navbar(props) {
 
     return (
         <nav id='nav' className="top-nav container-fluid">
-            <div className="navigation-logo-wrapper">
+            <div className="navigation-logo-wrapper animate__animated animate__bounce animate__slow ">
                 <a href="#" className='navigation-logo'>Jes Sri</a>
             </div>
             <ul className="navbar-button-container ">

@@ -8,7 +8,7 @@
     background-color: beige;
 }
 
-.hero::before {
+/* .hero::before {
     content: 'Back-End';
     position: absolute;
     width: 100vw;
@@ -20,7 +20,7 @@
     opacity: .05;
     z-index: 0;
     transform: translate(-50%, -50%);
-}
+} */
 
 .hero-content{
     position: absolute;

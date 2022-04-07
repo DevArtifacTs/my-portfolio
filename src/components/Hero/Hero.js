@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-import './Hero.css'
+import './Hero.css';
+import './HeroAnimation.css';
+import 'animate.css';
 
 function Hero(props){
 
@@ -16,12 +18,10 @@ function Hero(props){
     }
 
     return(
-        <header id="hero" className="hero container-fluid">
+        <header id="hero" className="hero container-fluid animate__animated animate__backInLeft animate__slow ">
             <h1 className="hero-content">
                 <span className="hero-name hero-secondary">I am...</span>
-                <span className="hero-description hero-main" 
-                onMouseEnter={handleContent}
-                onMouseLeave={handleContent}>
+                <span className="hero-description hero-main animate__animated animate__backInLeft animate__slower">
                         {heroContent}
                 </span>
                 <span className="hero-job hero-secondary">Developer</span>
