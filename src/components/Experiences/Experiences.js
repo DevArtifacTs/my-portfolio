@@ -43,9 +43,9 @@ function Experiences(props){
                     <div className="experiences-wrapper">
                         <h4 className="blurb-heading" >Works</h4>
                     {/* <img className="work-experience-icon" src="./icons/worker.png" alt="" /> */}
-                        {workExperiences.map((exp)=> {
+                        {workExperiences.map((exp, index)=> {
                             return (
-                                <ExperienceCard exp={exp}/>
+                                <ExperienceCard key={index} exp={exp}/>
                             )
                         }
 
@@ -54,9 +54,9 @@ function Experiences(props){
                     </div>
                     <div className="educations-wrapper">
                         <h4 className="blurb-heading" >Educations</h4>
-                        {educations.map((edu)=> {
+                        {educations.map((edu, index)=> {
                             return (
-                                <EducationCard edu={edu}/>
+                                <EducationCard key={index} edu={edu}/>
                             )
                         }
 

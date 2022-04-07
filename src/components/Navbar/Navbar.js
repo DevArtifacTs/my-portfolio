@@ -14,24 +14,30 @@ const navbarItem = [
 
 function Navbar(props) {
 
-    // access to element
-    const menuBar = document.getElementById('navbar-menu')
+    // access menubar element 
+    const menuBar = document.getElementById('navbar-menu')  
+    // let menuBarStyle = menuBar.style;
 
     // logic for handle NavbarButton click event
     const [menuToggle, setMenuToggle] = useState(false); 
 
     function handleToggle(){
         setMenuToggle(!menuToggle);
-        appendMenu()
+        appendMenu();
 
     }
     function appendMenu(){
         if(menuToggle){
             menuBar.style.display = 'flex'
+            // menuBarStyle = 'flex';
         } else {
             menuBar.style.display = 'none'
+            // menuBarStyle = 'none';
         }
     }
+    useEffect(()=> {
+        console.log(menuToggle);
+    },[])
 
     return (
         <nav id='nav' className="top-nav container-fluid">
@@ -40,18 +46,18 @@ function Navbar(props) {
             </div>
             <ul className="navbar-button-container ">
                 {
-                    navbarItem.map((navItem) => {
+                    navbarItem.map((navItem, index) => {
                         return(
-                            <NavbarButton navItem={navItem}/>
+                            <NavbarButton key={index} navItem={navItem}/>
                         )
                     })
                 }
             </ul>
             <ul id="navbar-menu" className="navbar-button-container navbar-menu  ">
                 {
-                    navbarItem.map((navItem) => {
+                    navbarItem.map((navItem, index) => {
                         return(
-                            <NavbarButton navItem={navItem}/>
+                            <NavbarButton key={index} navItem={navItem}/>
                         )
                     })
                 }

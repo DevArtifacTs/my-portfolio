@@ -51,9 +51,6 @@
     transform: scale(1.1);
 }
 
-/* .navbar-menu-reveal{
-    display: flex;
-} */
 /* responsive */
 @media only screen and  (max-width: 965px ) {
     #nav {
@@ -74,7 +71,6 @@
     .navbar-menu {
         width: 230px;
         height: 200px;
-        display: flex;
         flex-direction: column;
         margin: 0;
         padding: 0;
