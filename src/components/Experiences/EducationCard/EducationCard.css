@@ -1,0 +1,16 @@
+.educations-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+}
+
+.education-card-wrapper {
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items:flex-start; */
+    text-align: start;
+    background-color:rgba(206, 206, 187, 1);
+    border-radius: 1rem;
+}

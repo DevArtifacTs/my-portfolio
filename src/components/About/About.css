@@ -1,0 +1,142 @@
+.about {
+    position: relative;
+    background-color: beige;
+    text-align: center;
+    padding-top: 0;
+}
+.about-header{
+    
+}
+.about-wrapper {
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-wrapper::before {
+    z-index: 1;
+    position: absolute;
+    content: "";
+    inset: 80px 300px 80px 300px;
+    border: 10px solid rgb(138, 145, 177);
+    border-image: initial;
+}
+
+.about-content-frame {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25rem;
+}
+
+.about-content-right { 
+    position: absolute;
+    padding: 1rem;
+    margin: 0;
+    max-width: 350px;
+    /* max-height: 350px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: beige;
+    top: 90px;
+    right: -300px; 
+}
+.blurb-heading{
+    text-align: start;
+}
+.about-full-name{
+    display: block;
+}
+.greeting {
+    margin: 0.3rem 0;
+}
+.about-content {
+    margin: 0.3rem 0;
+}
+.about-content-right  p {
+    text-align: justify;
+    text-transform:none;
+    /* font-size: 4.3vw; */
+}
+#my-manifest{
+    margin: 0.3rem 0 0 0 ;
+    font-family: 'Lobster', cursive;
+    text-align: justify;
+}
+
+
+ /* responsive */
+ @media only screen and (max-width :1400px){
+    .about-content-frame {
+        padding-left: 18rem;
+    }
+ }
+ @media only screen and (max-width :1200px){
+    .about-content-frame {
+        padding-left: 14rem;
+    }
+
+ }
+ @media only screen and (max-width :1150px){
+    .about-content-frame {
+        padding-left: 10rem;
+    }
+    .about-content-right { 
+        padding: 0.5rem;
+        max-width: 300px;
+        height: 400px ;
+        top: 80px;
+        right: -210px; 
+    }
+    .about-wrapper::before {
+        inset: 80px 300px 80px 200px;
+    }
+    .greeting{
+        text-align: start;
+        font-size: 26px;
+    }
+    .about-content-right  p {
+        text-align: justify;
+        text-transform:none;
+        font-size: 15px;
+    }
+    #my-manifest{
+        text-align: justify;
+        font-size: 26px;
+    }
+
+ }
+ @media only screen and (max-width :1000px){
+     .about-wrapper{
+         display: flex;
+         justify-content: center;
+     }
+    .about-wrapper::before {
+        border: 0px solid rgb(138, 145, 177);   
+    }
+    .about-content-frame{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 10px solid rgb(138, 145, 177);    ;
+    }
+    .about-content-right { 
+        margin-top: 1rem;
+        position: static;
+    }
+ }
+ @media only screen and (max-width :670px){
+   .about-content-frame{
+       border: 0px solid rgb(138, 145, 177);    ;
+   }
+   .about-image{
+       width: 450px;
+   }
+
+}

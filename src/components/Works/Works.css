@@ -1,0 +1,32 @@
+
+.works {
+    background-color: beige;
+    text-align: center;
+}
+
+.works h3 {
+    margin: 2rem;
+}
+
+.aws-btn {
+    --slider-height-percentage: 100%;
+    --slider-transition-duration: 200ms;
+    --organic-arrow-thickness: 11px;
+    --organic-arrow-border-radius: 8px;
+    --organic-arrow-height: 63px;
+    --organic-arrow-color: #4c519a;
+    --control-button-width: 13%;
+    --control-button-height: 25%;
+    --control-button-background: transparent;
+    --control-bullet-color: #62a4fa;
+    --control-bullet-active-color: #538bd5;
+    --loader-bar-color: #212529;
+    --loader-bar-height: 10px;
+    }
+
+.work-banner-container{
+    /* padding: 3rem; */
+    position: relative;
+}
+
+

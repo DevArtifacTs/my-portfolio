@@ -1,0 +1,187 @@
+
+.slider-container {
+    position: relative;
+    padding: 1rem 5rem 5rem 5rem;
+    display: grid;
+    grid-template-columns: [start] 90vw [end] ;
+    grid-template-rows: [start] 80vh [end] ;
+    justify-items: center;
+}
+
+.menu-icon{
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    width: 60px;
+    z-index: 3;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: rgba(138, 145, 177,0.7);
+}
+
+.work-description {
+    position: absolute;
+    width: 350px;
+    left: 80px;
+    top: 10px;
+    z-index: 2;
+    /* background-color: rgba(179, 184, 189,1); */
+    border-radius: 20px;
+    padding: 0.5rem;
+    
+}
+
+.work-description h3, h5,  ul {
+    text-decoration: none;
+    margin: 1rem;
+    text-transform: none;
+    text-align: start;
+    color: black;
+}
+
+.work-description h3 {
+    font-size: 32px;
+    font-weight: 800;
+}
+.work-description h5 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.work-card-description{
+    text-transform: none;
+    color: black;
+}
+
+.work-card-link {
+    color: rgb(59, 34, 188);
+    font-size: 18px;
+    font-weight: 800;
+    text-align: start;
+}
+
+
+/* animation */
+
+.work-description:hover {
+    /* background-color: rgba(179, 184, 189,1); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(236, 236, 207, 0.5);
+    cursor: pointer;
+}
+.work-description a:hover {
+    color: aquamarine;
+}
+
+.menu-icon:hover {
+    border-radius: 10px;
+    background-color: rgba(138, 145, 177, 1);
+    cursor: pointer;
+}
+
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    /* -ms-animation: blink normal 2s infinite ease-in-out; IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+ 
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+ 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* responsive */
+@media only screen and  (max-width: 1200px ){
+    .slider-container{
+        padding-left: 4rem;
+    }  
+}
+@media only screen and  (max-width: 950px ){
+    .slider-container{
+        padding-left: 3rem;
+    }  
+}
+@media only screen and  (max-width: 760px ){
+    .slider-container{
+        padding-left: 1.8rem;
+    }  
+}
+@media only screen and  (max-width: 550px ){
+    .slider-container{
+        padding-left: 1rem;
+    }  
+    .menu-icon{
+        width: 40px;
+        border-radius: 5px;
+        left: 50px;
+        top: 30px;
+    }
+    .work-description{
+        width: 250px ;
+        left: 50px;
+    }
+    .work-description h3{
+        font-size: 20px  ;
+    }
+    .work-description p{
+        font-size: 14px  ;
+    }
+    .work-description h5{
+        font-size: 18px  ;
+    }
+    ul li {
+        font-size: 14px;
+    }
+}
+
+@media only screen and  (max-width: 450px ){
+    .work-description{
+        width: 210px ;
+        left: 25px;
+    }
+}

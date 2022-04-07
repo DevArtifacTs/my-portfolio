@@ -1,0 +1,36 @@
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: beige;
+}
+.skills h3 {
+    text-align: center;
+}
+.skill-card-item{
+    padding: 0.5rem;
+}
+
+/* animation */
+.skill-card-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    /* background-color: aliceblue;
+    border-radius: 50%; */
+}
+
+/* responsive */
+@media only screen and  (max-width: 500px ){
+    .skill-card-item{
+        padding: 1.2rem;
+    }
+    
+}
+@media only screen and  (max-width: 431px ){
+    .skill-card-item{
+        padding: 0.5rem;
+    }
+    
+}
