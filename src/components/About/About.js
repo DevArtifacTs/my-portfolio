@@ -6,7 +6,7 @@ function About(props){
 
     return(
         <section id="about" className="about container-fluid ">
-            <h3 className="about-title section-title-text ">Let's me introduce my self.</h3>
+            <h3 className="about-title section-title-text ">About Me</h3>
                 <div className="about-wrapper animate__animated animate__backInLeft ">
                     <div className="about-content-frame">
                         <img src="./images/jessada.png" alt="profile-image" className="about-image " />

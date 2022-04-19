@@ -13,12 +13,14 @@
     padding: 0.5rem;
 }
 
+.react-icons {
+    width:100%;
+  }
+
 /* animation */
 .skill-card-item:hover {
     transform: scale(1.1);
     cursor: pointer;
-    /* background-color: aliceblue;
-    border-radius: 50%; */
 }
 
 /* responsive */
