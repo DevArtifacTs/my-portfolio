@@ -31,7 +31,7 @@ function WorkCard(props){
                         })
                         }
                     </ul>
-                    <a className="work-card-link" href="#hero"><p>See full project</p></a>
+                    <a className="work-card-link" href={props.cardInfo.link} target='_blank' ><p>See full project</p></a>
                 </div>
             }
         </>
