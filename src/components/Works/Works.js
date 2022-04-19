@@ -49,7 +49,7 @@ function Works(props){
 
     return (
         <section id="works" className="works " >
-            <h3 className="section-title-text">Recently Works</h3>
+            <h3 className="section-title-text">Previous Project</h3>
             <div className="slider-container">       
                 <AwesomeSlider style={{borderRadius : '20px' , border : '10px solid rgb(138, 145, 177)', padding : '2rem'}}>
                     <div data-src="/images/activity-app-crud.png">
