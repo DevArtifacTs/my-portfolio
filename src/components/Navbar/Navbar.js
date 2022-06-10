@@ -6,7 +6,7 @@ import NavbarButton from "./NavbarButton/NavbarButton";
 
 
 const navbarItem = [
-    {text : 'About', id : 'nav-about', linkTo : '#about' },
+    {text : 'About Me', id : 'nav-about', linkTo : '#about' },
     {text : 'Experiences', id : 'nav-experiences', linkTo : '#experiences'},
     {text : 'Skills', id : 'nav-skills', linkTo : '#skills'},
     {text : 'Works', id : 'nav-works', linkTo : '#works'},
