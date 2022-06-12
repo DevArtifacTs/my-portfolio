@@ -43,7 +43,7 @@ function Navbar(props) {
     }, [])
 
     return (
-        <nav id='nav' className="top-nav container-fluid">
+        <nav id='nav' className="top-nav container-fluid sticky-top">
             <div className="navigation-logo-wrapper animate__animated animate__bounce animate__slow ">
                 <a href="#" className='navigation-logo'>Jes Sri</a>
             </div>
