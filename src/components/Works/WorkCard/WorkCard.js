@@ -19,7 +19,7 @@ function WorkCard(props){
                 />
             }
             { !props.showMenu &&
-                <div className="work-description" onMouseLeave={handleShowMenu} >
+                <div className="work-description" onClick={handleShowMenu} onMouseLeave={handleShowMenu} >
                     <h3 className="work-card-title">{props.cardInfo.cardTitle}</h3>
                     <p className="work-card-description">{props.cardInfo.cardDescription}</p>
                     <h5>Tech I use</h5>
