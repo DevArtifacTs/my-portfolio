@@ -16,7 +16,8 @@ const navbarItem = [
 function Navbar(props) {
 
     // access menubar element 
-    const menuBar = document.getElementById('navbar-menu')  
+    const [menuBar, setMenuBar] = useState(document.getElementById('navbar-menu') );
+    // const menuBar = document.getElementById('navbar-menu')  
     // let menuBarStyle = menuBar.style;
 
     // logic for handle NavbarButton click event
@@ -38,7 +39,8 @@ function Navbar(props) {
     }
     useEffect(()=> {
         console.log(menuToggle);
-    },[])
+        setMenuBar(document.getElementById('navbar-menu') )
+    }, [])
 
     return (
         <nav id='nav' className="top-nav container-fluid">
@@ -54,6 +56,7 @@ function Navbar(props) {
                     })
                 }
             </ul>
+            
             <ul id="navbar-menu" className="navbar-button-container navbar-menu  ">
                 {
                     navbarItem.map((navItem, index) => {
