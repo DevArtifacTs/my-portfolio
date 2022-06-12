@@ -15,10 +15,16 @@ function About(props){
                                 Hello, I'm James
                                 <i className="about-full-name">(Jessada Srimoon)</i>
                             </h3>
-                            <p className="about-content">
-                                I am a mechanical engineer with a strong interest in software development. 
-                                I am currently designing my works using MERN stack technology.I am a never-ending learner. 
-                                I'd love to learn something new and work with others to complete the tasks.</p>
+                            <p className="about-content lh-5">
+                                {/* I am a mechanical engineer with a strong interest in software development.  */}
+                                {/* I am currently designing my works using MERN stack technology.I am a never-ending learner.  */}
+                                {/* I'd love to learn something new and work with others to complete the tasks. */}
+                                I am a Front-End developer.
+                                <br />
+                                I encode your ideas into reality.
+                                <br />
+                                Currently designing my works using MERN stack technology.
+                            </p>
                             <h4 className="blurb-heading" id="my-manifest">
                                 I blending my skills and experiences to invent a technology solution.
                             </h4>
