@@ -24,9 +24,9 @@ function WorkCard(props){
                     <p className="work-card-description">{props.cardInfo.cardDescription}</p>
                     <h5>Tech I use</h5>
                     <ul>
-                        { props.cardInfo.techStacks.map((tech) => {
+                        { props.cardInfo.techStacks.map((tech, index) => {
                             return (
-                                <li>{tech}</li>
+                                <li key={index} >{tech}</li>
                             )
                         })
                         }
