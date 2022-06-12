@@ -13,6 +13,12 @@ const works = [
         link : 'https://activity-app-crud.vercel.app/'
     },
     {
+        cardTitle : 'Weather App (openweathermap API)',
+        cardDescription : 'You can see the weather in your city and also you can see the weather in the world.',
+        techStacks : ['React', 'css module', 'HTML'],
+        link : 'https://react-weather-ew3gu1pv3-devartifacts.vercel.app/'
+    },
+    {
         cardTitle : 'Input Form Validation page',
         cardDescription : 'The code challenge from Front End Mentor website. User will be warn with the error icon that will be appended if they input invalid data',
         techStacks : ['HTML', 'CSS', 'JS'],
@@ -24,18 +30,6 @@ const works = [
         techStacks : ['HTML', 'CSS'],
         link : 'https://devartifacts.github.io/nft-preview-card-component-main/'
     },
-    // {
-    //     cardTitle : 'Fully Responsive Academic Website',
-    //     cardDescription : 'A academic webpage mockup that can be display on any device.',
-    //     techStacks : ['HTML', 'CSS', 'Bootstrap'],
-    //     link : 'https://devartifacts.github.io/colmar-academy-bootstrap-mix-css/'
-    // },
-    // {
-    //     cardTitle : 'Spotify Jammming',
-    //     cardDescription : 'The Spotify 3rd party for music playlist creation',
-    //     techStacks : ['React', 'CSS'],
-    //     link : 'http://jessada-band.surge.sh/'
-    // },
 
 ]
 
@@ -68,9 +62,25 @@ function Works(props){
                         })
                         } 
                     </div>
-                    <div data-src="/images/input-form-validation.png" > 
+                    <div data-src="/images/weather-app.jpg" style={{ objectFit: 'cover'}}  > 
                         {works.map((card, index) => {
                                 if(index === 1){
+                                    return (
+                                        <WorkCard 
+                                        key = {index}
+                                        id = {index}
+                                        cardInfo ={card}
+                                        showMenu={showMenu}
+                                        handleShowMenu={handleShowMenu} 
+                                        />
+                                    )
+                                }
+                            })
+                            } 
+                    </div>
+                    <div data-src="/images/input-form-validation.png" > 
+                        {works.map((card, index) => {
+                                if(index === 2){
                                     return (
                                         <WorkCard 
                                         key = {index}
@@ -87,7 +97,7 @@ function Works(props){
 
                     <div data-src="/images/nft-card.png"  > 
                         {works.map((card, index) => {
-                                if(index === 2){
+                                if(index === 3){
                                     return (
                                         <WorkCard 
                                         key = {index}
@@ -101,6 +111,7 @@ function Works(props){
                             })
                             } 
                     </div>
+                    
                 </AwesomeSlider>
             </div>
             {/* <WorkCard/> */}
