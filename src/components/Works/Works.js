@@ -30,6 +30,13 @@ const works = [
         techStacks: ['HTML', 'CSS'],
         link: 'https://devartifacts.github.io/nft-preview-card-component-main/'
     },
+    {
+        cardTitle: 'Responsive Portfolio Mockup page',
+        src: '/images/mockup-portfolio.png',
+        cardDescription: 'Learning how to create responsive landing page from www.freeCodeCamp.com ',
+        techStacks: ['HTML', 'CSS'],
+        link: 'https://free-code-camp-responsive.vercel.app/'
+    },
 
 ]
 
