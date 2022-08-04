@@ -14,7 +14,7 @@ const educations = [
     yearDuration : '2016-2019',
     title : 'Mechanical Engineering',
     organizer : 'Chiangmai University',
-    acheivements :['Team member of Enginerring Inventor Club. ']
+    acheivements :['Team member of Engineering Inventor Club. ']
     }
 ]
 const workExperiences = [
