@@ -10,6 +10,13 @@ const works = [
         link: 'https://activity-app-crud.vercel.app/'
     },
     {
+        cardTitle: 'Vue Weather App (openweathermap API)',
+        src: '/images/vue-weather-app.png',
+        cardDescription: 'This app is allowed you to see the weather in your city.',
+        techStacks: ['Vue', 'css', 'HTML'],
+        link: 'https://vue-weather-app-gilt.vercel.app/'
+    },
+    {
         cardTitle: 'Weather App (openweathermap API)',
         src: '/images/weather-app.png',
         cardDescription: 'You can see the weather in your city and also you can see the weather in the world.',
