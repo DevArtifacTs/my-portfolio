@@ -51,37 +51,39 @@ function Works(props) {
     return (
         <section id="works" className="works " >
             <h3 className="section-title-text">Previous Project</h3>
-            <div className="slider-container d-flex justify-content-center mt-5 mb-0" style={{ paddingLeft: '10rem', paddingRight: '10rem' }}>
+            <div className="container d-flex justify-content-center mt-5 mb-0" >
+                <div className="row" >
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" >
-                    <div className="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        {works.map((item, index) => {
-                            if (index > 0) {
-                                return <button key={index} type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={index} aria-label={`Slide ${index}`}></button>
-                            }
-                        })}
-                    </div>
-                    {works.map((item, index) => {
-                        if (index === 0) {
-                            return <div className="carousel-item active" style={{ maxHeight: '100%', position: 'relative' }} >
-                                <WorkCard cardInfo={item} showMenu={showMenu} handleShowMenu={handleShowMenu} />
-                                <img src={item.src} className="d-block w-100" alt="project-img" style={{ objectFit: 'cover' }} />
+                            <div className="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                {works.map((item, index) => {
+                                    if (index > 0) {
+                                        return <button key={index} type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={index} aria-label={`Slide ${index}`}></button>
+                                    }
+                                })}
                             </div>
-                        } else {
-                            return <div className="carousel-item" style={{ maxHeight: '100%', position: 'relative' }}>
-                                <WorkCard cardInfo={item} showMenu={showMenu} handleShowMenu={handleShowMenu} />
-                                <img src={item.src} className="d-block w-100" alt="project-img" style={{ objectFit: 'cover' }} />
-                            </div>
-                        }
-                    })}
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                            {works.map((item, index) => {
+                                if (index === 0) {
+                                    return <div className="carousel-item active" style={{ maxHeight: '100%', position: 'relative' }} >
+                                        <WorkCard cardInfo={item} showMenu={showMenu} handleShowMenu={handleShowMenu} />
+                                        <img src={item.src} className="d-block w-100" alt="project-img" style={{ objectFit: 'cover' }} />
+                                    </div>
+                                } else {
+                                    return <div className="carousel-item" style={{ maxHeight: '100%', position: 'relative' }}>
+                                        <WorkCard cardInfo={item} showMenu={showMenu} handleShowMenu={handleShowMenu} />
+                                        <img src={item.src} className="d-block w-100" alt="project-img" style={{ objectFit: 'cover' }} />
+                                    </div>
+                                }
+                            })}
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                 </div>
             </div>
         </section>
